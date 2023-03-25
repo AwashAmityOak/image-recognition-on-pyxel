@@ -229,7 +229,7 @@ class App():
 		pyxel.init(self.WIDTH, self.HEIGHT, title=self.TITLE, fps=self.FPS)
 		pyxel.mouse(True)
 
-		self.canvas = Canvas(0, 0, self.WIDTH, self.WIDTH, weight=16)
+		self.canvas = Canvas(0, 0, self.WIDTH, self.WIDTH, weight=8)
 
 		self.frame_coordinates = (0, self.WIDTH, self.WIDTH-1, self.HEIGHT-1)
 		self.frame_pos_and_size = (0, self.WIDTH, self.WIDTH, self.HEIGHT-self.WIDTH)
@@ -464,5 +464,7 @@ class App():
 			pyxel.rectb(*sprite)
 		pyxel.pal()
 
-if __name__ == "__main__":
-	App()
+# if __name__ == "__main__":
+# 	App()
+
+App()
